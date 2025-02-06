@@ -176,7 +176,7 @@ plt.ylabel("Inércia")
 plt.title("Método do Cotovelo para Seleção do Número de Clusters")
 plt.show()
 
-# Definir número ideal de clusters (suponha que o melhor seja 3)
+# Definir número ideal de clusters
 num_clusters = 3
 kmeans = KMeans(n_clusters=num_clusters, random_state=42, n_init=10)
 dados_combinados['Cluster'] = kmeans.fit_predict(dados_cluster_normalizado)
